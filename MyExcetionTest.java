@@ -12,4 +12,16 @@ public class MyExcetionTest {
         }
         return intValue;
     }
-   
+ public static void main(String[] args) {
+        String testStr = "@A1B123";
+        try {
+            int result = parseInt(testStr);
+            System.out.println("转换后整数是 : " + String.valueOf(result));
+        } catch (TypeSwapWxception e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+
